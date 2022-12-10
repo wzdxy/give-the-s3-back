@@ -30,7 +30,7 @@ export default function Home() {
         </h1>
 
         <p className={styles.description}>
-          1Get started by editing{' '}
+          2Get started by editing{' '}
           <code className={styles.code}>pages/index.tsx</code>
         </p>
           {productList}
