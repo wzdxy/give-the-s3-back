@@ -1,0 +1,45 @@
+{
+  // 电脑品牌，同文件夹名称
+  brand: "dell",
+  // windows识别的系统型号，使用 msinfo32.exe 查看
+  system_model: "XPS 15 9570",
+  // 所属的产品系列
+  product_serials: "xps",
+  // 具体型号名，官网的支持文档查看
+  model: "xps-15-9570",
+  // 默认状态是否支持 S3 睡眠
+  default_support_s3: 0,
+  // 如果默认不支持，是否可以开启
+  can_open_s3_by: {
+    // 是否可以通过用户界面设置，包括系统设置，厂商提供的电脑管家、驱动设置等
+    user_interface_settings: 0,
+    // 是否可以通过注册表开启 S3 睡眠
+    regedit: 0,
+    // 是否可以通过 BIOS 设置开启 S3 睡眠
+    bios_settings: 0,
+    // 是否可以通过刷 BIOS 开启 S3 睡眠
+    flash_bios: 0,
+    others: {
+      "en_us": "刷旧版BIOS"
+    },
+    // 其他方法，多条文字描述
+  },
+  available_sleep_states: [
+    "S0",
+    "Hibernate",
+    "Fast Startup",
+  ],
+  // 可用的睡眠状态 powercfg /a 获取
+  not_available_sleep_states: [
+    // 不可用的睡眠状态
+    "S1",
+    "S2",
+    "S3",
+    "Hybrid Sleep",
+  ],
+  offical_support_page: {
+    "en-us": "https://www.dell.com/support/home/en-us/product-support/product/xps-15-9570-laptop/overview",
+    "zh-cn": "https://www.dell.com/support/home/zh-cn/product-support/product/xps-15-9570-laptop/overview"
+  },
+}
+
