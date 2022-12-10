@@ -1,0 +1,77 @@
+{
+  products: [
+    {
+      brand: 'dell',
+      system_model: 'XPS 15 9570',
+      product_serials: 'xps',
+      model: 'xps-15-9570',
+      default_support_s3: 0,
+      can_open_s3_by: {
+        user_interface_settings: 0,
+        regedit: 0,
+        bios_settings: 0,
+        flash_bios: 0,
+        others: {
+          en_us: '刷旧版BIOS',
+        },
+      },
+      available_sleep_states: [
+        'S0',
+        'Hibernate',
+        'Fast Startup',
+      ],
+      not_available_sleep_states: [
+        'S1',
+        'S2',
+        'S3',
+        'Hybrid Sleep',
+      ],
+      offical_support_page: {
+        'en-us': 'https://www.dell.com/support/home/en-us/product-support/product/xps-15-9570-laptop/overview',
+        'zh-cn': 'https://www.dell.com/support/home/zh-cn/product-support/product/xps-15-9570-laptop/overview',
+      },
+    },
+    {
+      brand: 'lenovo',
+      system_model: '81BV',
+      product_serials: 'ideapad',
+      model: 'IdeaPad720S-13IKB',
+      default_support_s3: 0,
+      can_open_s3_by: {
+        user_interface_settings: 0,
+        regedit: 0,
+        bios_settings: 0,
+        flash_bios: 0,
+      },
+      available_sleep_states: [
+        'S0',
+        'Hibernate',
+        'Fast Startup',
+      ],
+      not_available_sleep_states: [
+        'S1',
+        'S2',
+        'S3',
+        'Hybrid Sleep',
+      ],
+      offical_support_page: {
+        'en-us': 'https://www.dell.com/support/home/en-us/product-support/product/xps-15-9570-laptop/overview',
+        'zh-cn': 'https://www.dell.com/support/home/zh-cn/product-support/product/xps-15-9570-laptop/overview',
+      },
+    },
+  ],
+  vendors: [
+    'apple',
+    'asus',
+    'dell',
+    'hasee',
+    'honor',
+    'hp',
+    'huawei',
+    'lenovo',
+    'mechrevo',
+    'microsoft',
+    'thinkpad',
+    'xiaomi',
+  ],
+}
