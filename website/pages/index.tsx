@@ -2,7 +2,7 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 // @ts-ignore
 import allData from '../data/all-data.json5'
-import {Col, Layout, Radio, RadioChangeEvent, Row, Space, Table, Tag} from 'antd'
+import {Col, Divider, Layout, Radio, RadioChangeEvent, Row, Space, Table, Tag} from 'antd'
 import {useEffect, useState} from 'react'
 import {i18n} from "../utils/i18n";
 import { LinkOutlined } from '@ant-design/icons'
@@ -76,7 +76,7 @@ export default function Home() {
       }
     },
     {
-      title: 'offical_page',
+      title: 'Offical Page',
       dataIndex: 'offical_page',
       key: 'offical_page',
       render: (record: any) => {
@@ -102,6 +102,7 @@ export default function Home() {
       <Head>
         <title>Give The S3 Back</title>
         <meta name="description" content="Windows Vendors, Give The S3 Sleep Mode Back!"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
         <link rel="icon" href="/favicon.ico"/>
         {/*<script async defer src="https://buttons.github.io/buttons.js"></script>*/}
       </Head>
@@ -115,21 +116,20 @@ export default function Home() {
           </Row>
         </Header>
         <Content>
-          <main className={styles.main}>
-            <div >
-              <p className={styles.mainTitle}>Windows Vendors, Give The S3 Sleep Mode Back!</p>
-              <p className={styles.subTitle}>Modern standby may be good, but there should be a choice.</p>
-            </div>
-            <div className={styles.filterBox}>
-              <Radio.Group onChange={onChange} value={vendor} optionType="button" buttonStyle="solid">
-                {/*<Space direction="vertical">*/}
-                <Radio value={""}>All</Radio>
-                {vendorOptions}
-                {/*</Space>*/}
-              </Radio.Group>
-            </div>
-            <Table columns={columns} dataSource={productListFiltered}></Table>
-          </main>
+          <div >
+            <p className={styles.mainTitle}>Windows Vendors, Give The S3 Sleep Mode Back!</p>
+            <p className={styles.subTitle}>Modern standby may be good, but there should be a choice.</p>
+          </div>
+          <div className={styles.filterBox}>
+            <Radio.Group onChange={onChange} value={vendor} optionType="button" buttonStyle="solid">
+              {/*<Space direction="vertical">*/}
+              <Radio value={""}>All</Radio>
+              {vendorOptions}
+              {/*</Space>*/}
+            </Radio.Group>
+          </div>
+          <Divider />
+          <Table scroll={{x: true}} columns={columns} dataSource={productListFiltered}></Table>
         </Content>
         <Footer></Footer>
       </Layout>

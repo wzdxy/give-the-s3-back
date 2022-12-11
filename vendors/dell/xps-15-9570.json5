@@ -1,26 +1,39 @@
 {
   // 电脑品牌，同文件夹名称
+  // device brand, same as folder name
   vendor: "DELL",
-  // windows识别的系统型号，使用 msinfo32.exe 查看
+  // Windows 系统识别的系统型号，使用 msinfo32.exe 查看
+  // Windows system model, use msinfo32.exe to view
   system_model: "XPS 15 9570",
   // 所属的产品系列
-  product_serials: "xps",
-  // 具体型号名，官网的支持文档查看
+  // product series
+  product_serials: "XPS",
+  // 具体型号名，在官网的商城或产品介绍页面查看，使用大写字母，短线链接；如果不同地区有不同的型号，使用 / 分隔，例如 ThinkBook 14p Gen 3/ThinkBook 14+ 2022
+  // specific model name, check on the official website, use uppercase letters and hyphens to connect; if there are different models in different regions, use / to separate, e.g. ThinkBook 14p Gen 3/ThinkBook 14+ 2022
   model: "XPS-15-9570",
-  // CPU配置
+  // CPU厂商，AMD or intel
+  // CPU vendor, AMD or intel
   cpuVendor: 'intel',
-  // 默认状态是否支持 S3 睡眠
+  // 默认状态是否支持 S3 睡眠，1代表支持，0代表不支持
+  // whether S3 sleep is supported by default, 1 means supported, 0 means not supported
   default_support_s3: 0,
-  // 如果默认不支持，是否可以开启
+  // 如果默认不支持，是否可以开启（如果默认就支持S3，此项不填）
+  // if it is not supported by default, whether it can be turned on (if S3 is supported by default, this item is not filled)
   can_open_s3_by: {
     // 是否可以通过用户界面设置，包括系统设置，厂商提供的电脑管家、驱动设置等
+    // whether it can be set through the user interface, including system settings, computer manager provided by the manufacturer, driver settings, etc.
     user_interface_settings: 0,
     // 是否可以通过注册表开启 S3 睡眠
+    // whether S3 sleep can be turned on through the registry
     regedit: 0,
     // 是否可以通过 BIOS 设置开启 S3 睡眠
+    // whether S3 sleep can be turned on through BIOS settings
     bios_settings: 0,
     // 是否可以通过刷 BIOS 开启 S3 睡眠
+    // whether S3 sleep can be turned on by flashing BIOS
     flash_bios: 0,
+    // 其他可以开启S3的方式，如刷更旧版本的BIOS、修改 DSDT 表等，每个方法用一个对象表示，包含 text 和 link，其中 text 支持多语言
+    // other ways to turn on S3, such as flashing older versions of BIOS, modifying DSDT table, etc., each method is represented by an object, including text and link, where text supports multiple languages
     others: [
       {
         text: {
@@ -28,29 +41,26 @@
           "zh-CN": "刷旧版本BIOS"
         },
         link: "https://www.reddit.com/r/Dell/comments/91313h/xps_15_9570_c_state_bug_after_s3_sleep_and_modern/"
-      },{
-        text: {
-          "en-US": "flash an older version of the BIOS",
-          "zh-CN": "刷旧版本BIOS"
-        },
-        link: "https://www.reddit.com/r/Dell/comments/91313h/xps_15_9570_c_state_bug_after_s3_sleep_and_modern2/"
-      },
+      }
     ],
-    // 其他方法，多条文字描述
   },
+  // 默认状态可用的睡眠状态列表，通过 powercfg /a 命令获取, 开头字母大写
+  // list of available sleep states by default, obtained by powercfg /a command, starting with uppercase letters
   available_sleep_states: [
     "S0",
     "Hibernate",
     "Fast Startup",
   ],
-  // 可用的睡眠状态 powercfg /a 获取
+  // 不可用的睡眠状态列表
+  // list of unavailable sleep states
   not_available_sleep_states: [
-    // 不可用的睡眠状态
     "S1",
     "S2",
     "S3",
     "Hybrid Sleep",
   ],
+  // 官方介绍页面，官方网站的产品介绍页、商城、或支持页面，可以填写多个语言的页面
+  // official introduction page, official website product introduction page, mall, or support page
   offical_page: {
     "en-US": "https://www.dell.com/support/home/en-US/product-support/product/xps-15-9570-laptop/overview",
     "zh-CN": "https://www.dell.com/support/home/zh-CN/product-support/product/xps-15-9570-laptop/overview"
