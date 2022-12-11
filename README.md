@@ -12,6 +12,8 @@ Find the folder with the vendor name of the laptop you are using in the vendors 
 
 在 vendors 目录下找到你使用的笔记本的厂商名字的文件夹，在文件夹中创建以型号命名的 json5 文件.
 
+json5 file writing rules can be referred to [xps-15-9570.json5](vendors/dell/xps-15-9570.json5)
+
 json5 文件的编写规则可以参考 [xps-15-9570.json5](vendors/dell/xps-15-9570.json5)
 
 ## Add More Vendors / 添加更多笔记本厂商

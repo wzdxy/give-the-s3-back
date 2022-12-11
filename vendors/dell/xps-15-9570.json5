@@ -8,8 +8,11 @@
   // 所属的产品系列
   // product series
   product_serials: "XPS",
-  // 具体型号名，在官网的商城或产品介绍页面查看，使用大写字母，短线链接；如果不同地区有不同的型号，使用 / 分隔，例如 ThinkBook 14p Gen 3/ThinkBook 14+ 2022
+  // 具体型号名，在官网的商城或产品介绍页面查看，使用大写字母，短线链接；
+  // 如果不同地区有不同的型号，使用 / 分隔，例如 ThinkBook 14p Gen 3/ThinkBook 14+ 2022
+  // 如果同一个型号有AMD和Intel版本，则建立两个文件分别维护
   // specific model name, check on the official website, use uppercase letters and hyphens to connect; if there are different models in different regions, use / to separate, e.g. ThinkBook 14p Gen 3/ThinkBook 14+ 2022
+  // If there are AMD and Intel versions of the same model, create two files to maintain them separately
   model: "XPS-15-9570",
   // CPU厂商，AMD or intel
   // CPU vendor, AMD or intel
