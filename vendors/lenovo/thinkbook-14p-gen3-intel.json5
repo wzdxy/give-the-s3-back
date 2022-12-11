@@ -1,0 +1,21 @@
+{
+  vendor: "LENOVO",
+  system_model: "",
+  product_serials: "thinkbook",
+  model: "ThinkBook 14p Gen 3/ThinkBook 14+ 2022",
+  cpuVendor: 'intel',
+  default_support_s3: 0,
+  can_open_s3_by: {
+    user_interface_settings: 0,
+    regedit: 0,
+    bios_settings: 0,
+    flash_bios: 0,
+  },
+  available_sleep_states: [],
+  not_available_sleep_states: [],
+  offical_page: {
+    "en-us": "https://www.lenovo.com/us/en/p/laptops/thinkbook/thinkbook-p/thinkbook-14p-gen-3-(14-inch-amd)/len101b0016",
+    "zh-cn": "https://www.thinkpad.com/device/ThinkBook14-2022"
+  },
+}
+

@@ -1,8 +1,9 @@
 {
-  brand: "lenovo",
+  vendor: "LENOVO",
   system_model: "81BV",
   product_serials: "ideapad",
-  model: "IdeaPad720S-13IKB",
+  model: "IdeaPad-720S-13IKB",
+  cpuVendor: 'intel',
   default_support_s3: 0,
   can_open_s3_by: {
     user_interface_settings: 0,
@@ -21,7 +22,7 @@
     "S3",
     "Hybrid Sleep",
   ],
-  offical_support_page: {
+  offical_page: {
     "en-us": "https://www.dell.com/support/home/en-us/product-support/product/xps-15-9570-laptop/overview",
     "zh-cn": "https://www.dell.com/support/home/zh-cn/product-support/product/xps-15-9570-laptop/overview"
   },

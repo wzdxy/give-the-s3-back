@@ -1,19 +1,33 @@
 {
   products: [
     {
-      brand: 'dell',
+      vendor: 'DELL',
       system_model: 'XPS 15 9570',
       product_serials: 'xps',
-      model: 'xps-15-9570',
+      model: 'XPS-15-9570',
+      cpuVendor: 'intel',
       default_support_s3: 0,
       can_open_s3_by: {
         user_interface_settings: 0,
         regedit: 0,
         bios_settings: 0,
         flash_bios: 0,
-        others: {
-          en_us: '刷旧版BIOS',
-        },
+        others: [
+          {
+            text: {
+              'en-US': 'flash an older version of the BIOS',
+              'zh-CN': '刷旧版本BIOS',
+            },
+            link: 'https://www.reddit.com/r/Dell/comments/91313h/xps_15_9570_c_state_bug_after_s3_sleep_and_modern/',
+          },
+          {
+            text: {
+              'en-US': 'flash an older version of the BIOS',
+              'zh-CN': '刷旧版本BIOS',
+            },
+            link: 'https://www.reddit.com/r/Dell/comments/91313h/xps_15_9570_c_state_bug_after_s3_sleep_and_modern2/',
+          },
+        ],
       },
       available_sleep_states: [
         'S0',
@@ -26,16 +40,46 @@
         'S3',
         'Hybrid Sleep',
       ],
-      offical_support_page: {
+      offical_page: {
+        'en-US': 'https://www.dell.com/support/home/en-US/product-support/product/xps-15-9570-laptop/overview',
+        'zh-CN': 'https://www.dell.com/support/home/zh-CN/product-support/product/xps-15-9570-laptop/overview',
+      },
+    },
+    {
+      vendor: 'LENOVO',
+      system_model: '81BV',
+      product_serials: 'ideapad',
+      model: 'IdeaPad-720S-13IKB',
+      cpuVendor: 'intel',
+      default_support_s3: 0,
+      can_open_s3_by: {
+        user_interface_settings: 0,
+        regedit: 0,
+        bios_settings: 0,
+        flash_bios: 0,
+      },
+      available_sleep_states: [
+        'S0',
+        'Hibernate',
+        'Fast Startup',
+      ],
+      not_available_sleep_states: [
+        'S1',
+        'S2',
+        'S3',
+        'Hybrid Sleep',
+      ],
+      offical_page: {
         'en-us': 'https://www.dell.com/support/home/en-us/product-support/product/xps-15-9570-laptop/overview',
         'zh-cn': 'https://www.dell.com/support/home/zh-cn/product-support/product/xps-15-9570-laptop/overview',
       },
     },
     {
-      brand: 'lenovo',
-      system_model: '81BV',
-      product_serials: 'ideapad',
-      model: 'IdeaPad720S-13IKB',
+      vendor: 'LENOVO',
+      system_model: '',
+      product_serials: 'thinkbook',
+      model: 'ThinkBook 14p Gen 3/ThinkBook 14+ 2022',
+      cpuVendor: 'amd',
       default_support_s3: 0,
       can_open_s3_by: {
         user_interface_settings: 0,
@@ -43,20 +87,31 @@
         bios_settings: 0,
         flash_bios: 0,
       },
-      available_sleep_states: [
-        'S0',
-        'Hibernate',
-        'Fast Startup',
-      ],
-      not_available_sleep_states: [
-        'S1',
-        'S2',
-        'S3',
-        'Hybrid Sleep',
-      ],
-      offical_support_page: {
-        'en-us': 'https://www.dell.com/support/home/en-us/product-support/product/xps-15-9570-laptop/overview',
-        'zh-cn': 'https://www.dell.com/support/home/zh-cn/product-support/product/xps-15-9570-laptop/overview',
+      available_sleep_states: [],
+      not_available_sleep_states: [],
+      offical_page: {
+        'en-us': 'https://www.lenovo.com/us/en/p/laptops/thinkbook/thinkbook-p/thinkbook-14p-gen-3-(14-inch-amd)/len101b0016',
+        'zh-cn': 'https://www.thinkpad.com/device/ThinkBook14-2022',
+      },
+    },
+    {
+      vendor: 'LENOVO',
+      system_model: '',
+      product_serials: 'thinkbook',
+      model: 'ThinkBook 14p Gen 3/ThinkBook 14+ 2022',
+      cpuVendor: 'intel',
+      default_support_s3: 0,
+      can_open_s3_by: {
+        user_interface_settings: 0,
+        regedit: 0,
+        bios_settings: 0,
+        flash_bios: 0,
+      },
+      available_sleep_states: [],
+      not_available_sleep_states: [],
+      offical_page: {
+        'en-us': 'https://www.lenovo.com/us/en/p/laptops/thinkbook/thinkbook-p/thinkbook-14p-gen-3-(14-inch-amd)/len101b0016',
+        'zh-cn': 'https://www.thinkpad.com/device/ThinkBook14-2022',
       },
     },
   ],
@@ -71,7 +126,6 @@
     'lenovo',
     'mechrevo',
     'microsoft',
-    'thinkpad',
     'xiaomi',
   ],
 }

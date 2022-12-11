@@ -1,12 +1,14 @@
 {
   // 电脑品牌，同文件夹名称
-  brand: "dell",
+  vendor: "DELL",
   // windows识别的系统型号，使用 msinfo32.exe 查看
   system_model: "XPS 15 9570",
   // 所属的产品系列
   product_serials: "xps",
   // 具体型号名，官网的支持文档查看
-  model: "xps-15-9570",
+  model: "XPS-15-9570",
+  // CPU配置
+  cpuVendor: 'intel',
   // 默认状态是否支持 S3 睡眠
   default_support_s3: 0,
   // 如果默认不支持，是否可以开启
@@ -19,9 +21,21 @@
     bios_settings: 0,
     // 是否可以通过刷 BIOS 开启 S3 睡眠
     flash_bios: 0,
-    others: {
-      "en_us": "刷旧版BIOS"
-    },
+    others: [
+      {
+        text: {
+          "en-US": "flash an older version of the BIOS",
+          "zh-CN": "刷旧版本BIOS"
+        },
+        link: "https://www.reddit.com/r/Dell/comments/91313h/xps_15_9570_c_state_bug_after_s3_sleep_and_modern/"
+      },{
+        text: {
+          "en-US": "flash an older version of the BIOS",
+          "zh-CN": "刷旧版本BIOS"
+        },
+        link: "https://www.reddit.com/r/Dell/comments/91313h/xps_15_9570_c_state_bug_after_s3_sleep_and_modern2/"
+      },
+    ],
     // 其他方法，多条文字描述
   },
   available_sleep_states: [
@@ -37,9 +51,9 @@
     "S3",
     "Hybrid Sleep",
   ],
-  offical_support_page: {
-    "en-us": "https://www.dell.com/support/home/en-us/product-support/product/xps-15-9570-laptop/overview",
-    "zh-cn": "https://www.dell.com/support/home/zh-cn/product-support/product/xps-15-9570-laptop/overview"
+  offical_page: {
+    "en-US": "https://www.dell.com/support/home/en-US/product-support/product/xps-15-9570-laptop/overview",
+    "zh-CN": "https://www.dell.com/support/home/zh-CN/product-support/product/xps-15-9570-laptop/overview"
   },
 }
 
